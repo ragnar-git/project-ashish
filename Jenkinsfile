@@ -11,7 +11,7 @@ pipeline {
 			dir ("/mnt/projects/22Q2"){
 			sh 'rm -rf /mnt/projects/22Q1/project-ashish'
 			sh 'git clone --branch 22Q2 https://github.com/ragnar-git/project-ashish.git'
-			sh 'aws s3 cp /mnt/projects/22Q1/project-ashish/index.html s3://buc-70'
+			sh 'aws s3 cp /mnt/projects/22Q2/project-ashish/index.html s3://buc-70'
 			}
 		}
 		}
